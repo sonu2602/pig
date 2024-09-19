@@ -1,0 +1,9 @@
+wget https://raw.githubusercontent.com/sonu2602/pig/main/rating_data
+
+wget https://raw.githubusercontent.com/sonu2602/pig/main/movies_item
+
+hdfs dfs -mkdir pig
+
+hdfs dfs -copyFromLocal Spark_Hadoop.py pig/ratings.data
+
+hdfs dfs -copyFromLocal friends.csv pig/movies.item
